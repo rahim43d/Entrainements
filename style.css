@@ -1,0 +1,153 @@
+/* ================================
+STYLE GÉNÉRAL DU PORTFOLIO
+================================ */
+
+* {
+  margin: 0; /* Supprime les marges par défaut de tous les éléments */
+  padding: 0; /* Supprime les espacements internes par défaut */
+  box-sizing: border-box; /* Inclut les bordures et marges dans la taille totale d’un élément */
+  }
+
+body {
+font-family: "Poppins", Arial, sans-serif; /* Police moderne et lisible */
+background-color: #f9fafc; /* Couleur de fond douce, gris très clair */
+color: #333; /* Couleur principale du texte (gris foncé pour la lisibilité) */
+line-height: 1.6; /* Espacement entre les lignes pour un meilleur confort de lecture */
+}
+
+/* Conteneur global pour centrer le contenu */
+.container {
+width: 90%; /* Largeur maximale à 90 % de la fenêtre */
+max-width: 1100px; /* Empêche que le contenu devienne trop large sur grand écran */
+margin: auto; /* Centre horizontalement le contenu */
+}
+
+/* ================================
+HEADER ET NAVIGATION
+================================ */
+header {
+background-color: #2b6cb0; /* Bleu principal du site */
+color: white; /* Texte blanc sur fond bleu */
+text-align: center; /* Centre tout le contenu horizontalement */
+padding: 2rem 0; /* Espace intérieur vertical */
+position: sticky; /* Le header reste visible quand on défile la page */
+top: 0; /* Collé en haut de la fenêtre */
+z-index: 1000; /* Priorité d’affichage au-dessus des autres éléments */
+}
+
+header h1 {
+font-size: 2rem; /* Taille du titre principal */
+margin-bottom: 0.3rem; /* Petit espace sous le titre */
+}
+
+header p {
+font-size: 1.1rem; /* Taille du sous-titre */
+opacity: 0.9; /* Légère transparence pour adoucir la couleur */
+margin-bottom: 1rem; /* Espace sous le texte avant le menu */
+}
+
+nav ul {
+list-style: none; /* Supprime les puces des listes */
+display: flex; /* Met les éléments du menu côte à côte */
+justify-content: center; /* Centre la liste horizontalement */
+gap: 1.5rem; /* Espace entre les liens */
+}
+
+nav a {
+color: white; /* Couleur des liens */
+text-decoration: none; /* Supprime le soulignement par défaut */
+font-weight: bold; /* Met le texte en gras */
+transition: color 0.3s ease; /* Animation douce quand la couleur change */
+}
+
+nav a:hover {
+color: #ffe082; /* Couleur dorée quand on survole le lien */
+}
+
+/* ================================
+SECTIONS GÉNÉRALES
+================================ */
+.section {
+padding: 4rem 0; /* Espace autour des sections */
+text-align: center; /* Centre le texte de chaque section */
+}
+
+.section h2 {
+color: #2b6cb0; /* Bleu pour les titres */
+font-size: 2rem; /* Taille moyenne pour les sous-titres */
+margin-bottom: 1rem; /* Espace sous le titre */
+}
+
+.section p {
+max-width: 700px; /* Largeur maximale du paragraphe pour éviter les lignes trop longues */
+margin: auto; /* Centre le texte horizontalement */
+font-size: 1rem; /* Taille de texte standard */
+}
+
+/* ================================
+PHOTO DE PROFIL
+================================ */
+.photo-profil {
+width: 160px; /* Largeur de la photo */
+height: 160px; /* Hauteur égale pour un carré parfait */
+border-radius: 50%; /* Rend la photo circulaire */
+object-fit: cover; /* Recadre bien l’image sans la déformer */
+margin-bottom: 1rem; /* Espace sous la photo */
+border: 4px solid #2b6cb0; /* Bordure bleue autour de la photo */
+}
+
+/* ================================
+PROJETS (CARDS)
+================================ */
+.projets-grid {
+display: grid; /* Active une grille flexible */
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Crée plusieurs colonnes adaptatives */
+gap: 1.5rem; /* Espace entre les cartes */
+margin-top: 2rem; /* Espace avant la grille */
+}
+
+.carte {
+background: white; /* Fond blanc pour contraster avec la page */
+padding: 1.5rem; /* Espace interne */
+border-radius: 10px; /* Coins arrondis pour un style doux */
+box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre légère pour donner du relief */
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation douce au survol */
+}
+
+.carte:hover {
+transform: translateY(-5px); /* Fait “remonter” légèrement la carte au survol */
+box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Ombre plus forte quand on survole */
+}
+
+.carte h3 {
+color: #2b6cb0; /* Titre de la carte en bleu */
+margin-bottom: 0.5rem; /* Espace sous le titre */
+}
+
+/* ================================
+FOOTER
+================================ */
+footer {
+background-color: #2b6cb0; /* Fond bleu du bas de page */
+color: white; /* Texte en blanc */
+text-align: center; /* Centrage du texte */
+padding: 1.5rem 0; /* Espacement vertical */
+margin-top: 2rem; /* Espace avant le footer */
+position: relative; /* Permet d’y placer le bouton “retour” correctement */
+}
+
+.btn-retour {
+display: inline-block; /* Fait du lien un petit bloc cliquable */
+margin-top: 0.8rem; /* Espace au-dessus du bouton */
+padding: 0.5rem 1rem; /* Taille du bouton */
+background-color: white; /* Fond blanc pour contraster avec le footer */
+color: #2b6cb0; /* Texte bleu */
+border-radius: 20px; /* Bouton arrondi */
+text-decoration: none; /* Retire le soulignement */
+font-weight: bold; /* Texte en gras */
+transition: background 0.3s ease; /* Animation douce au survol */
+}
+
+.btn-retour:hover {
+background-color: #ffe082; /* Change la couleur du fond au survol */
+}
